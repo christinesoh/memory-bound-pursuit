@@ -1,0 +1,81 @@
+a d g p
+A D G P
+
+b i j m
+B I J M
+
+e o q r
+E O Q R
+
+d g i q
+D G I Q
+
+c f l n
+C F L N
+
+j n p r
+J N P R
+
+f h k l
+F H K L
+
+a c k m
+A C K M
+
+i j m r
+I J M R
+
+d o p q
+D O P Q
+
+b e h o
+B E H O
+
+c e g k
+C E G K
+
+g k m o
+G K M O
+
+c e f l
+C E F L
+
+i j l q
+I J L Q
+
+a b h r
+A B H R
+
+a f h p
+A F H P
+
+c e j q
+C E J Q
+
+a e k o
+A E K O
+
+a g p q
+A G P Q
+
+m n o r
+M N O R
+
+b h i l
+B H I L
+
+i j m n
+I J M N
+
+d f g p
+D F G P
+
+b h k n
+B H K N
+
+c d f l
+C D F L
+
+b h k n
+B H K N
+

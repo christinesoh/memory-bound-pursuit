@@ -1,0 +1,81 @@
+A C B K
+a1 k c1 b1
+
+B I D E
+i e1 d1 b1
+
+D G F A
+d1 f1 g a1
+
+F B L C
+c1 b1 f1 l
+
+C A D L
+c1 d1 l a1
+
+A E F H
+h f1 e1 a1
+
+F D K B
+f1 d1 k b1
+
+J A E C
+a1 c1 j e1
+
+B E H D
+d1 h e1 b1
+
+J I F B 
+f1 i b1 j
+
+A E G K
+k e1 g a1
+
+C E J F
+f1 e1 c1 j
+
+D J C E
+e2 j d1 c1
+
+D C H A
+c2 h a2 d2
+
+L B E H
+l b2 e2 h
+
+A C F L
+l f2 c2 a2
+
+B G C D
+g d2 b2 c2
+
+C B K H
+h k b2 c2
+
+K E F D
+k e2 d2 f2
+
+B J A D
+j b2 d2 a2
+
+D I A L
+i l a2 d2
+
+H C I F 
+f2 h c2 i
+
+D F J G 
+d2 j g f2
+
+A I B F
+a2 i f2 b2
+
+C E I G
+c2 g i e2
+
+B E A G
+b2 e2 a2 g
+
+F E K L
+f2 k l e2
+
