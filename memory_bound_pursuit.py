@@ -1,6 +1,6 @@
 from random import choice, choices
 import numpy as np
-from lru_cache import LRUCache
+from memory_buffer import MemoryBuffer
 
 from library import parse_input_data
 
@@ -266,7 +266,7 @@ def pursuit(learning_data_path, buffer_size=10):
     :return: associations {<str>: <np.array<float>>}, meanings [<str>], lexicon {<str>:[<str>]}
     """
     associations = {}
-    memory_buffer = LRUCache(buffer_size)
+    memory_buffer = MemoryBuffer(buffer_size)
     meanings = []
     lexicon = {}
 

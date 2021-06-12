@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from lru_cache import LRUCache
+from memory_buffer import MemoryBuffer
 from library import parse_input_data, extract_golden_standard
 from memory_bound_pursuit import pursuit_utterance, online_pursuit_mc
 from memory_bound_xsit import online_xsit_utterance, make_lexicon
@@ -26,8 +26,8 @@ def run_exp(count=200):
             association = {}
             meanings = []
             lexicon = {}
-            at = max(1, round(np.random.normal(10, 1)))
-            memory_buffer = LRUCache(at)
+            current_memory_size = max(1, round(np.random.normal(10, 1)))
+            memory_buffer = MemoryBuffer(current_memory_size)
             instance = 0
             correct_last = {}
             for word in GOLD_TRUESWELL:
@@ -44,8 +44,7 @@ def run_exp(count=200):
                     simulated_answer = online_pursuit_mc(word, m_u, new_lexicon, meanings, association)
                 else:
                     association, meanings, lexicon, memory_buffer = pursuit_utterance(association, meanings, lexicon,
-                                                                                      memory_buffer, w_u, m_u,
-                                                                                      threshold=3.)
+                                                                                      memory_buffer, w_u, m_u)
                     simulated_answer = online_pursuit_mc(word, m_u, lexicon, meanings, association)
                 if word in GOLD_TRUESWELL:
                     correct = simulated_answer == GOLD_TRUESWELL[word]

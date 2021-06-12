@@ -1,3 +1,5 @@
+from random import sample
+
 class Node:
     def __init__(self, word):
         self.word = word
@@ -29,7 +31,7 @@ class Node:
         self.prev = other
 
 
-class LRUCache:
+class MemoryBuffer:
     def __init__(self, size):
         self.cache_limit = size
         self.cache = {}
@@ -62,15 +64,12 @@ class LRUCache:
     def get(self):
         if len(self.cache) == 0:
             raise IndexError("Nothing to remove")
-
-        lru = self.head.get_next()
-        word = lru.get_word()
-        self.cache.pop(word)
-        lru.remove()
+        word = sample(self.cache, 1)[0]
+        self.cache.remove(word)
         return word
 
     def full(self):
-        return len(self.cache) > self.cache_limit
+        return len(self.cache) >= self.cache_limit
 
     def __str__(self):
         string = ""

@@ -1,6 +1,6 @@
 import numpy as np
 from random import choice
-from lru_cache import LRUCache
+from memory_buffer import MemoryBuffer
 
 from library import eval_model, parse_input_data
 
@@ -216,7 +216,7 @@ def online_xsit(tau=0.77, buffer_size=100, learning_data_path=None, beta=100, sm
     associations = {}
     meanings = []
     lexicon = {}
-    memory_buffer = LRUCache(buffer_size)
+    memory_buffer = MemoryBuffer(buffer_size)
 
     if learning_data_path:
         parsed_input = parse_input_data(learning_data_path)
